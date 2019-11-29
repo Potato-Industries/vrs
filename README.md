@@ -8,6 +8,9 @@ https://vlang.io/
 https://github.com/vlang/v#installing-v-from-source
 
 **Compile**
+
+must compile on target platform (at least for now, relatively new language)
+
 ```
 root@kali:/opt/v# ./v vrs.v 
 root@kali:/opt/v# file vrs
