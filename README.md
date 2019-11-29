@@ -1,7 +1,7 @@
 
 # vrs
 
-portable v based reverse shell
+portable v (vlang) based reverse shell
 
 https://vlang.io/
 
