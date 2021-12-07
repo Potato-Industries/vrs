@@ -25,14 +25,8 @@ fn exec(path string) string {
 fn main() {
         mut conn := net.dial_tcp('localhost:8080') ?
         mut reader := io.new_buffered_reader(reader: conn)
-        defer {
-                reader.free()
-        }
         for {
                 result := reader.read_line() or { return }
-                if result == '' {
-                        return
-                }
                 conn.write_string(exec(result) + '\n') or { return }
         }
 }
